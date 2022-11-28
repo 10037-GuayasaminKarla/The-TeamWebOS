@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Payment Form </title>
+</head>
+
+<body>
+    <nav>
+        <table width="100%">
+            <tr>
+                <td>
+                    <a href="/LuaStore/06Code/principalpage.html">
+                    <img src="/LuaStore/06Code/images/logoprincipal.png" width="80" alt="Luastore logo">
+                    </a>
+                </td>
+                <td align="left">
+                    <h4>LUA STORE</h4>
+                </td>
+                <td align="right">
+                    <button>
+                        <a href="/LuaStore/06Code/aboutus.html">About Us</a>
+                    </button>
+                    <button>
+                        <a href="/LuaStore/06Code/products.html">Products</a>
+                    </button>
+                    <button>
+                        <a href="/LuaStore/06Code/collection.html">Collections</a>
+                    </button>
+                    <button>
+                        <a href="/LuaStore/06Code/forms.html">Buy</a>
+                    </button>
+                </td>
+                <td align="right">
+                    <label>Search</label>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+    </nav> <br>
+    <hr size="5"> 
+    <form method="get">
+        <h1 align="center">Card Payment</h1>
+        <table border="3" cellpadding="15" width="30%" align="center">
+            <tr>
+                <th>
+                    <label for="html">Name</label>
+                </th>
+                <td>
+                    <input type="text" id="name" name="name"></br>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="html">Last Name</label>
+                </th>
+                <td>
+                    <input type="text" id="name" name="name"></br>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="html">City</label>
+                </th>
+                <td>
+                    <select name="menu">
+                        <option>Azuay</option>
+                        <option>Bolívar</option>
+                        <option>Cañar</option>
+                        <option>Carchi</option>
+                        <option>Chimborazo</option>
+                        <option>Cotopaxi</option>
+                        <option>El Oro</option>
+                        <option>Esmeraldas</option>
+                        <option>Galápagos</option>
+                        <option>Guayas</option>
+                        <option>Imbabura</option>
+                        <option>Loja</option>
+                        <option>Los Rios</option>
+                        <option>Manabí </option>
+                        <option>Morona Santiago </option>
+                        <option>Napo</option>
+                        <option>Orellana</option>
+                        <option>Pastaza</option>
+                        <option>Pichincha</option>
+                        <option>Santa Elena</option>
+                        <option>Santo Domingo de los Tsáchilas </option>
+                        <option>Sucumbíos</option>
+                        <option>Tungurahua</option>
+                        <option>Zamora Chinchipe</option>
+
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="html">Main and secondary street</label>
+                </th>
+                <td>
+                    <input type="text" id="City" name="City"></br>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="html">Zip Code</label>
+                </th>
+                <td>
+                    <input type="number" id="code" name="code"></br>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="phone">Phone number</label>
+                </th>
+                <td>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Description">Description</label>
+                </th>
+                <td>
+                    <textarea  name="texto" rows="4" cols="40">Write something</textarea>
+                        
+                        </textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>Payment method</th>
+                <td>
+                    <input type="radio" id="Card" name="Visa" value="V">
+                    <label for="Visa">Visa</label> </br>
+
+                    <input type="radio" id="Card" name="Mastercard" value="M">
+                    <label for="Mastercard">Mastercard</label></br>
+
+                    <input type="radio" id="Card" name="American Express" value="AE">
+                    <label for="American Express">American Express</label></br>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <input type="submit">
+                </th>
+                <th>
+                    <input type="reset">
+                </th>
+
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+
+</html>
