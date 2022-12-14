@@ -41,10 +41,13 @@
     <hr size="5">
     <form method="get">
         <h1 align="center">Card Payment</h1>
+        <label>Payment types</label>
+        <img src="/LuaStore/06Code/images/cards.png" width="100" height="25">
+
         <table border="3" cellpadding="15" width="30%" align="center">
             <tr>
                 <th>
-                    <label for="html">Name</label>
+                    <label for="name">Name</label>
                 </th>
                 <td>
                     <input type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required /></br>
@@ -52,115 +55,39 @@
             </tr>
             <tr>
                 <th>
-                    <label for="html">Last Name</label>
+                    <label for="Card Number">Card Number</label>
                 </th>
                 <td>
-                    <input type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required /></br>
+                    <input type="number" id="name" name="card" minlength="16" required></br>
                 </td>
             </tr>
             <tr>
                 <th>
-                    <label for="html">City</label>
+                    <label for="Expiration Date">Expiration Date</label>
                 </th>
                 <td>
-                    <select name="menu">
-                        <option>Azuay</option>
-                        <option>Bolívar</option>
-                        <option>Cañar</option>
-                        <option>Carchi</option>
-                        <option>Chimborazo</option>
-                        <option>Cotopaxi</option>
-                        <option>El Oro</option>
-                        <option>Esmeraldas</option>
-                        <option>Galápagos</option>
-                        <option>Guayas</option>
-                        <option>Imbabura</option>
-                        <option>Loja</option>
-                        <option>Los Rios</option>
-                        <option>Manabí </option>
-                        <option>Morona Santiago </option>
-                        <option>Napo</option>
-                        <option>Orellana</option>
-                        <option>Pastaza</option>
-                        <option>Pichincha</option>
-                        <option>Santa Elena</option>
-                        <option>Santo Domingo de los Tsáchilas </option>
-                        <option>Sucumbíos</option>
-                        <option>Tungurahua</option>
-                        <option>Zamora Chinchipe</option>
-
-                    </select>
+                    <input type="date" id="Expiration" name="Expiration" min="2022-12-13" ></br>
                 </td>
             </tr>
             <tr>
                 <th>
-                    <label for="html">Main and secondary street</label>
+                    <label for="Security Code">Security Code</label>
                 </th>
                 <td>
-                    <input type="text" id="City" name="City" pattern="^([A-Za-z]+)$" required /></br>
+                    <input type="password" id="Security" name="Security" minlength="3" maxlength="4" required> 3 or 4 digits</br>
                 </td>
             </tr>
             <tr>
                 <th>
-                    <label for="html">Zip Code</label>
-                </th>
-                <td>
-                    <input type="number" id="code" name="code" minlength="6" required /></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="phone">Phone number</label>
-                </th>
-                <td>
-                    <input type="tel" id="phone" name="phone" minlength="10" required />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Description">Description</label>
-                </th>
-                <td>
-                    <textarea name="texto" rows="4" cols="40">Write something</textarea>
-
-                    </textarea>
-                </td>
-            </tr>
-            <tr>
-                <th>Payment method</th>
-                <td>
-
-                    <div>
-                        <input type="radio" id="Card" name="Visa" value="V"  >
-                        <label for="Visa">Visa</label> </br>
-                    </div>
-
-
-                    <div>
-                        <input type="radio" id="Card" name="Mastercard" value="M" >
-                        <label for="Mastercard">Mastercard</label></br>
-                    </div>
-
-
-                    <div>
-                        <input type="radio" id="Card" name="American Express" value="AE" >
-                        <label for="American Express">American Express</label></br>
-                    </div>
-
-
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <input type="submit">
+                    <button type="submit">Make payment</button>
                 </th>
                 <th>
-                    <input type="reset">
+                    <button type="button">Reset</button>
                 </th>
+
 
             </tr>
         </table>
-
     </form>
 
 </body>
