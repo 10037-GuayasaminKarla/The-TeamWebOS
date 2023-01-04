@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title> Payment Form </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <link href="CSS/stylesP.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
 <body>
@@ -10,8 +14,8 @@
         <table width="100%">
             <tr>
                 <td>
-                    <a href="/LuaStore/06Code/principalpage.html">
-                        <img src="/LuaStore/06Code/images/logoprincipal.png" width="80" alt="Luastore logo">
+                    <a href="../06Code/principalpage.html">
+                        <img src="../06Code/images/logoprincipal.png" width="80" alt="Luastore logo">
                     </a>
                 </td>
                 <td align="left">
@@ -19,75 +23,48 @@
                 </td>
                 <td align="right">
                     <button>
-                        <a href="/LuaStore/06Code/aboutus.html">About Us</a>
+                        <a href="../06Code/aboutus.html">About Us</a>
                     </button>
                     <button>
-                        <a href="/LuaStore/06Code/products.html">Products</a>
+                        <a href="../06Code/products.html">Products</a>
                     </button>
                     <button>
-                        <a href="/LuaStore/06Code/collection.html">Collections</a>
+                        <a href="../06Code/collection.html">Collections</a>
                     </button>
                     <button>
-                        <a href="/LuaStore/06Code/forms.html">Buy</a>
+                        <a href="../06Code/forms.html">Buy</a>
                     </button>
                 </td>
-                <td align="right">
-                    <label>Search</label>
-                    <input type="text">
+                <td align="right" >
+                    <label >Search</label>
+                    <input style="border-radius: 10px;" type="text" >
                 </td>
             </tr>
         </table>
     </nav> <br>
-    <hr size="5">
-    <form method="get">
-        <h1 align="center">Card Payment</h1>
-        <label>Payment types</label>
-        <img src="/LuaStore/06Code/images/cards.png" width="100" height="25">
 
-        <table border="3" cellpadding="15" width="30%" align="center">
-            <tr>
-                <th>
-                    <label for="name">Name</label>
-                </th>
-                <td>
-                    <input type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required /></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Card Number">Card Number</label>
-                </th>
-                <td>
-                    <input type="number" id="name" name="card" minlength="16" required></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Expiration Date">Expiration Date</label>
-                </th>
-                <td>
-                    <input type="date" id="Expiration" name="Expiration" min="2022-12-13" ></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Security Code">Security Code</label>
-                </th>
-                <td>
-                    <input type="password" id="Security" name="Security" minlength="3" maxlength="4" required> 3 or 4 digits</br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <button type="submit">Make payment</button>
-                </th>
-                <th>
-                    <button type="button">Reset</button>
-                </th>
+    <section class="form-CardPayment">
+        <h4 align="center">Card Payment</h4>
+        <h5>Payment types</h5>
+        <div class="img_container">
+            <img src="../06Code/images/cards.png" width="100" height="25">
+        </div>
+    <form method="get" action="">
+        Full Name <input class="controls" type="text" name="Name" id="Name" placeholder="Name" pattern="^([A-Za-z]+)$" >
+        Card Number <input class="controls" type="number" name="Card" id="Card" placeholder="Card Number" minlength="16">
+        Expiration Date <input class="controls" type="date" name="Expiration" id="Expiration" placeholder="Date" min="2022-12-13">
+        Security Code <input class="controls" type="password" name="Security" id="Security" placeholder="3 or 4 digits" minlength="3" maxlength="4">
+
+        <div class="tacbox">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox">I agree with <a href="#">Terms and Condition.</a></label>
+          </div>
 
 
-            </tr>
-        </table>
+
+        <input class="buttons" type="reset" value="Reset">
+        <input class="buttons " type="submit" value="Save">
+        
     </form>
 
 </body>
