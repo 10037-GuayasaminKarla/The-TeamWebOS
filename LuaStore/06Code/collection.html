@@ -1,67 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Products</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="collectiondesign.css">
+    <title>Collection</title>
 </head>
 
 <body>
-    <nav>
-        <table width="100%">
-            <tr>
-                <td>
-                    <a href="/LuaStore/06Code/principalpage.html">
-                    <img src="/LuaStore/06Code/images/logoprincipal.png" width="80" alt="Luastore logo">
-                    </a>
-                </td>
-                <td align="left">
-                    <h4>LUA STORE</h4>
-                </td>
-                <td align="right">
-                    <button>
-                        <a href="/LuaStore/06Code/aboutus.html">About Us</a>
-                    </button>
-                    <button>
-                        <a href="/LuaStore/06Code/products.html">Products</a>
-                    </button>
-                    <button>
-                        <a href="/LuaStore/06Code/collection.html">Collections</a>
-                    </button>
-                    <button>
-                        <a href="/LuaStore/06Code/forms.html">Buy</a>
-                    </button>
-                </td>
-                <td align="right">
-                    <label>Search</label>
-                    <input type="text">
-                </td>
-            </tr>
-        </table>
-    </nav> <br>
-    <hr size="5">
-    <header align="center">
-        <h1>Collections</h1>
-    </header>
-    <div>
-        <table border="1" width="100%">
-            <tr align="center">
-                <td> <img src="/LuaStore/06Code/images/colecionequipos.png" width="300" alt="productoseleccion"></td>
-                <td> <img src="/LuaStore/06Code/images/coleccionpersonajes.png" width="300" alt="productobarcelona"></td>
-                <td> <img src="/LuaStore/06Code/images/coleccionprincesas.png" width="300" alt="productohaloween"></td>
-            </tr>
-            <tr align="center">
-                <td>
-                    <a href="#">View this collection</a>
-                </td>
-                <td>
-                    <a href="#">View this collection</a>
-                </td>
-                <td>
-                    <a href="#">View this collection</a>
-                </td>
-            </tr>
-        </table>
-    </div> <br>
+    <div class="contenedor">
+        <nav class="nav">
+            <a href="/06Code/principalpage.html">
+                <img class="logolua" src="images/logoprincipal.png" alt="logolua">
+            </a>
+            <p class="text">Lúa Store</p>
+            <ul class="options">
+                <li><a href="/06Code/aboutus.html">About Us</a></li>
+                <li><a href="/06Code/products.html">Products</a></li>
+                <li><a href="/06Code/collection.html">Collections</a></li>
+                <li><a href="/06Code/forms.html">Buy</a></li>
+            </ul>
+            <input type="text" class="search" placeholder="Search">
+        </nav>
+        <h1 class="title">Collections</h1>
+        <div class="img">
+            <img src="images/colecionequipos.png" width="300" alt="productoseleccion"></td>
+            <img src="images/coleccionpersonajes.png" width="300" alt="productobarcelona"></td>
+            <img src="images/coleccionprincesas.png" width="300" alt="productohaloween"></td>
+        </div>
+        <div class="visit">
+            <a href="#">View this collection</a>
+            <a href="#">View this collection</a>
+            <a href="#">View this collection</a>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
 </body>
 
 </html>

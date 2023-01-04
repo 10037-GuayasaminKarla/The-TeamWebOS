@@ -1,0 +1,131 @@
+*{
+    padding:0px ;
+    margin:0px ;
+    box-sizing: border-box ;
+}   
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.3rem;
+}
+
+.contenedor{
+    display: grid ;
+    grid-template-areas: "nav nav nav"
+                    "title title title"
+                    "aboutus aboutus aboutus"
+                    "contact contact contact" 
+                    "buy buy buy"
+                    "footer footer footer" ;
+    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-rows: 10vh 10vh 20vh 40vh 10vh 10vh;
+}
+
+.nav{
+    display: grid;
+    grid-area: nav;
+    align-items: center;
+    padding: 1rem 3rem;
+    grid-template-areas: "logolua text options search";
+    grid-template-columns: 10vw 10vw 60vw 20vw ;
+}
+
+.nav ul{
+    text-align: right;
+    list-style: none;
+}
+
+.nav ul li{
+    text-align: left;
+    display: inline-block;
+    padding-right: 1.6rem;
+}
+
+.nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logolua{
+    display: grid;
+    grid-area: logolua;
+    width: 4rem;
+}
+
+.text{
+    display: grid;
+    grid-area: text;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.search{
+    display: grid;
+    grid-area: search;
+    padding: 0.7rem;
+    margin-right: 5rem;
+    border-radius: 1rem;
+    box-shadow: 1px solid black;
+}
+
+.title{
+    display: grid;
+    grid-area: title;
+    text-align: center;
+    margin-top: 3rem;
+    color: black;
+    font-size: 2.6rem;
+}
+
+.aboutus{
+    display: grid;
+    grid-area: aboutus;
+    text-align: justify;
+    padding: 1rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+
+.contact{
+    display: grid;
+    grid-area: contact;
+    grid-template-areas: "icon detail";
+    grid-template-columns: 50vw 50vw ;
+    margin-top: 5rem;
+}
+
+.icon{
+    display: grid;
+    grid-area: icon;
+    text-align: right;
+    align-items: center;
+
+}
+
+.detail{
+    display: grid;
+    grid-area: detail;
+    text-align: left;
+    align-items: center;
+
+}
+
+.detail li{
+    list-style: none;
+    margin-left: 0.5rem;
+}
+
+.buy{
+    display: grid;
+    grid-area: buy;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: rgb(17, 16, 16);
+    padding: 1rem;
+}
+
