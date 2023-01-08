@@ -1,70 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title> Payment Form </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Lúa Store</title>
+    <link rel="stylesheet" href="deliverydesign.css">
 </head>
 
 <body>
-    <nav>
-        <table width="100%">
-            <tr>
-                <td>
-                    <a href="/LuaStore/06Code/principalpage.html">
-                        <img src="/LuaStore/06Code/images/logoprincipal.png" width="80" alt="Luastore logo">
-                    </a>
-                </td>
-                <td align="left">
-                    <h4>LUA STORE</h4>
-                </td>
-                <td align="right">
-                    <button>
-                        <a href="/LuaStore/06Code/aboutus.html">About Us</a>
-                    </button>
-                    <button>
-                        <a href="/LuaStore/06Code/products.html">Products</a>
-                    </button>
-                    <button>
-                        <a href="/LuaStore/06Code/collection.html">Collections</a>
-                    </button>
-                    <button>
-                        <a href="/LuaStore/06Code/forms.html">Buy</a>
-                    </button>
-                </td>
-                <td align="right">
-                    <label>Search</label>
-                    <input type="text">
-                </td>
-            </tr>
-        </table>
-    </nav> <br>
-    <hr size="5">
-    <form method="get">
-        <h1 align="center">Delivery Data</h1>
-        <table border="3" cellpadding="15" width="30%" align="center">
-            <tr>
-                <th>
-                    <label for="html">Name</label>
-                </th>
-                <td>
-                    <input type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required /></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="html">Last Name</label>
-                </th>
-                <td>
-                    <input type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required /></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="html">City</label>
-                </th>
-                <td>
-                    <select name="menu">
-                        <option>Azuay</option>
+    <nav class="menu navbar">
+        <div class="container-fluid">
+            <img src="/images/logoprincipalboy.png" alt="foto-logotipo" class="logolua" href="#">
+            <a class="texto navbar-brand" href="/06Code/delivery.html">Lúa Store</a>
+            <ul class="options">
+                <li class="nav-item">
+                    <a class="nav-link" href="/06Code/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/06Code/products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/06Code/collection.html">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/06Code/forms.html">Buy</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="search form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="search btn" type="submit">
+                    <img src="/images/search.png" class="searchicon" alt="searchicon">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <form method="get" class="form dl">
+                <h1 class="title">Delivery</h1>
+                <div class="row d-flex justify-content-center">
+                    <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                    <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <label for="lastname" class="col-sm-2 col-form-label">Last Name:</label>
+                    <input class="form-control" type="text" id="lastname" name="name" pattern="^([A-Za-z]+)$" required>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <label for="city" class="col-sm-2 col-form-label">City:</label>
+                    <select id="city" class="form-select">
+                        <option selected>Azuay</option>
                         <option>Bolívar</option>
                         <option>Cañar</option>
                         <option>Carchi</option>
@@ -88,81 +77,55 @@
                         <option>Sucumbíos</option>
                         <option>Tungurahua</option>
                         <option>Zamora Chinchipe</option>
-
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="html">Main and secondary street</label>
-                </th>
-                <td>
-                    <input type="text" id="City" name="City" pattern="^([A-Za-z]+)$" required /></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="html">Zip Code</label>
-                </th>
-                <td>
-                    <input type="number" id="code" name="code" minlength="6" required /></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="phone">Phone number</label>
-                </th>
-                <td>
-                    <input type="tel" id="phone" name="phone" minlength="10" required />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Description">Description</label>
-                </th>
-                <td>
-                    <textarea name="texto" rows="4" cols="40">Write something</textarea>
-
-                    </textarea>
-                </td>
-            </tr>
-            <tr>
-                <th>Payment method</th>
-                <td>
-
-                    <div>
-                        <input type="radio" id="Card" name="Visa" value="V"  >
-                        <label for="Visa">Visa</label> </br>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <label for="street" class="col-sm-2 col-form-label">Direction:</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Main and secondary street"
+                        pattern="^([A-Za-z]+)$" required>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <label for="zip" class="col-sm-2 col-form-label">Zip:</label>
+                    <input type="text" class="form-control" id="zip" minlength="6" required>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <label for="number" class="col-sm-2 col-form-label">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" minlength="10" required />
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <label for="descrption" class="col-sm-2 col-form-label">Description</label>
+                    <textarea class="form-control" id="description" rows="3">Write the descrption</textarea>
+                </div>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Payment Method</legend>
+                    <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="visa" id="visa" checked>
+                        <label class="form-check-label" for="visa">
+                            Visa
+                        </label>
                     </div>
-
-
-                    <div>
-                        <input type="radio" id="Card" name="Mastercard" value="M" >
-                        <label for="Mastercard">Mastercard</label></br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mastercard" id="fmastercard">
+                        <label class="form-check-label" for="mastercard">
+                            Mastercard
+                        </label>
                     </div>
-
-
-                    <div>
-                        <input type="radio" id="Card" name="American Express" value="AE" >
-                        <label for="American Express">American Express</label></br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="americanexpress" id="famericanexpress">
+                        <label class="form-check-label" for="americanexpress">
+                            American Express
+                        </label>
                     </div>
-
-
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <input type="submit">
-                </th>
-                <th>
-                    <input type="reset">
-                </th>
-
-            </tr>
-        </table>
-
-    </form>
-
+                    </div>
+                </fieldset>
+                <button type="submit" class="add btn btn-success">Add
+                </button>
+                <button type="reset" class="reset btn btn-danger">Reset
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
 
 
