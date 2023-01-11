@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Lúa Store</title>
-    <link rel="stylesheet" href="formsdesign.css">
+    <title>Register</title>
+    <link rel="stylesheet" href="registerdesign.css">
 </head>
 
 <body>
@@ -45,108 +45,69 @@
                 </button>
             </div>
         </nav>
-
-
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
-                <li class="nav-item"><a href="/products.html" class="nav-link px-2 text-muted">Products</a></li>
-                <li class="nav-item"><a href="/collection.html" class="nav-link px-2 text-muted">Collections</a></li>
-                <li class="nav-item"><a href="/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
-            </ul>
-            <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
-                Guerra</p>
-        </footer>
-    </div>
-    <hr size="5">
-
-    <h1 align="center">Register a new client
-        Is simple and easy.</h1>
-
-    <form method="get">
-
-        <table border="3" cellpadding="15" width="30%" align="center">
-
-            <tr>
-                <th>
-                    <label for="html">E-MAIL</label>
-                </th>
-                <td>
-                    <input type="email" id="email" name="email" placeholder="email" required />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="html">Password</label>
-                </th>
-                <td>
-                    <input type="password" id="password" name="password"  pattern=".{6,}" required  ></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="html">Confirm Password</label>
-                </th>
-                <td>
-                    <input type="password" id="password" name="password"  pattern=".{6,}" required ></br>
-                </td>
-            </tr>
-            <tr>
-                <th>Gender</th>
-                <td>
-                    <input type="radio" id="male" name="gender" value="m" checked>
-                    <label for="male">Male</label> </br>
-
-                    <input type="radio" id="female" name="gender" value="f">
-                    <label for="female">Female</label></br>
-
-                    <input type="radio" id="other" name="gender" value="o">
-                    <label for="other">Other</label></br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <button type="submit">Register</button>
-                </th>
-                <th>
-                    <button type="reset">Try again</button>
-                </th>
-
-
-            </tr>
-        </table> <br>
-        <table align="center">
-            <tr>
-                <td>
-                    <img src="/LuaStore/06Code/images/GOOGLE.png" width="25" height="25"></IMG>
-                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1676930408%3A1669342461059724&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Des%26sa%3DX%26ved%3D0ahUKEwjJh9mfocj7AhUYSTABHQb-AX0QPAgI&ec=GAZAmgQ&hl=es&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAvroVB6U9AjIigQ2jzoJXitYjcybumWRX3WzfckzlMlxe_HfG8xt-pKyKrcMoc-NPJe5GCq"
-                        target="_blank">
-                        <button type="button">Register with Google</button>
-                    </a>
-                </td>
-                <td>
-                    <img src="/LuaStore/06Code/images/fb.png" width="25" height="25"></IMG>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <button type="button">Register with Facebook </button>
-                    </a>
-                </td>
-            </tr>
-        </table><br>
-        <table align="center">
-            <tr>
-                <td>
-                    <button>
-                        <a href="/LuaStore/06Code/passwordforget.html">Forget your password</a>
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <form method="get" class="form dl">
+                    <h1 class="title">Register</h1>
+                    <div class="row d-flex justify-content-center">
+                        <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="email" required />
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="password" class="col-sm-2 col-form-label">Password:</label>
+                        <input class="form-control" type="password" id="password" name="password" pattern=".{6,}"
+                            required></br>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="date" class="col-sm-2 col-form-label">Confirm Password:</label>
+                        <input class="form-control" type="password" id="password" name="password" pattern=".{6,}"
+                            required></br>
+                    </div>
+                    <fieldset class="container mb-3">
+                        <div class="row">
+                            <legend class="col-form-label col-2 pt-0">Gender</legend>
+                            <div class="col-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="male" id="male" checked>
+                                    <label class="form-check-label" for="male">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="female" id="ffemale">
+                                    <label class="form-check-label" for="female">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="other" id="other">
+                                    <label class="form-check-label" for="other">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="add btn btn-success">Register
                     </button>
-                </td>
-            </tr>
-        </table>
+                    <button type="reset" class="reset btn btn-danger">Try Again
+                    </button>
+                </form>
+            </div>
 
-    </form>
-    
-
-
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
+                    <li class="nav-item"><a href="/products.html" class="nav-link px-2 text-muted">Products</a></li>
+                    <li class="nav-item"><a href="/collection.html" class="nav-link px-2 text-muted">Collections</a>
+                    </li>
+                    <li class="nav-item"><a href="/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
+                </ul>
+                <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
+                    Guerra</p>
+            </footer>
+        </div>
 </body>
 
 

@@ -132,6 +132,13 @@ LUA GIRL #f298b15d
     border-radius: 1rem;
 }
 
+.title{
+    margin: 2rem;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 5px 5px #1971b94d;
+}
+
 
 
 

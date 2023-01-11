@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Card Payment</title>
-    <link rel="stylesheet" href="formsdesign.css">
+    <link rel="stylesheet" href="paymentdesign.css">
 </head>
 
 <body>
@@ -45,61 +45,49 @@
                 </button>
             </div>
         </nav>
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
-                <li class="nav-item"><a href="/products.html" class="nav-link px-2 text-muted">Products</a></li>
-                <li class="nav-item"><a href="/collection.html" class="nav-link px-2 text-muted">Collections</a></li>
-                <li class="nav-item"><a href="/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
-            </ul>
-            <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
-                Guerra</p>
-        </footer>
-    </div>
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <form method="get" class="form dl">
+                    <h1 class="title">Card Payment</h1>
+                    <div class="row d-flex justify-content-center">
+                        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                        <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="lastname" class="col-sm-2 col-form-label">Card Number:</label>
+                        <input class="form-control" type="number" name="Card" id="Card" placeholder="Card Number"
+                            minlength="16">
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="date" class="col-sm-2 col-form-label">Expiration Date:</label>
+                        <input class="form-control" type="date" name="Expiration" id="Expiration" placeholder="Date"
+                            min="2022-12-13">
+                    </div>
 
+                    <div class="row d-flex justify-content-center">
+                        <label for="zip" class="col-sm-2 col-form-label">Zip:</label>
+                        <input type="text" class="form-control" id="zip" minlength="6" required>
+                    </div>
 
-            </tr>
- <br>
-
-    <section class="form-CardPayment">
-        <h4 align="center">Card Payment</h4>
-        <h5>Payment types</h5>
-        <div class="img_container">
-            <img src="../06Code/images/cards.png" width="100" height="25">
-        </div>
-        <form method="get" action="">
-            Full Name <input class="controls" type="text" name="Name" id="Name" placeholder="Name"
-                pattern="^([A-Za-z]+)$">
-            Card Number <input class="controls" type="number" name="Card" id="Card" placeholder="Card Number"
-                minlength="16">
-            Expiration Date <input class="controls" type="date" name="Expiration" id="Expiration" placeholder="Date"
-                min="2022-12-13">
-            Security Code <input class="controls" type="password" name="Security" id="Security"
-                placeholder="3 or 4 digits" minlength="3" maxlength="4">
-
-            <div class="tacbox">
-                <input id="checkbox" type="checkbox" />
-                <label for="checkbox">I agree with <a href="#">Terms and Condition.</a></label>
+                    <button type="submit" class="add btn btn-success">Add
+                    </button>
+                    <button type="reset" class="reset btn btn-danger">Reset
+                    </button>
+                </form>
             </div>
-
-            <tr>
-                <input class="buttons" type="reset" value="Reset">
-
-                <input class="buttons " type="submit" value="Save">
-            </tr>
-            <footer id="main-footer">
-                <p>&copy; 2023 <a href="#">Lua Store</a></p>
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
+                    <li class="nav-item"><a href="/products.html" class="nav-link px-2 text-muted">Products</a></li>
+                    <li class="nav-item"><a href="/collection.html" class="nav-link px-2 text-muted">Collections</a>
+                    </li>
+                    <li class="nav-item"><a href="/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
+                </ul>
+                <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
+                    Guerra</p>
             </footer>
-
-            </section>
-
-
-        </form>
-
-        
-
+        </div>
 </body>
-
 
 </html>
