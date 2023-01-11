@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Card Payment</title>
+    <link rel="stylesheet" href="formsdesign.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="menu navbar">
+            <div class="col-1 d-flex justify-content-center">
+                <img src="/images/logoprincipalboy.png" alt="foto-logotipo" class="logolua" href="#">
+            </div>
+            <div class="col-sm-3 d-flex justify-content-left">
+                <a class="texto navbar-brand" href="/principalpage.html">Lúa Store</a>
+            </div>
+            <div class="col-sm-5 d-flex justify-content-between">
+                <ul class="options">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/collection.html">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/forms.html">Buy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2 d-flex justify-content-">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-1 d-flex justify-content-">
+                <button class="search btn" type="submit">
+                    <img src="/images/iconblue.png" class="searchicon" alt="searchicon">
+                </button>
+            </div>
+        </nav>
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
+                <li class="nav-item"><a href="/products.html" class="nav-link px-2 text-muted">Products</a></li>
+                <li class="nav-item"><a href="/collection.html" class="nav-link px-2 text-muted">Collections</a></li>
+                <li class="nav-item"><a href="/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
+            </ul>
+            <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
+                Guerra</p>
+        </footer>
+    </div>
+
+
+            </tr>
+ <br>
+
+    <section class="form-CardPayment">
+        <h4 align="center">Card Payment</h4>
+        <h5>Payment types</h5>
+        <div class="img_container">
+            <img src="../06Code/images/cards.png" width="100" height="25">
+        </div>
+        <form method="get" action="">
+            Full Name <input class="controls" type="text" name="Name" id="Name" placeholder="Name"
+                pattern="^([A-Za-z]+)$">
+            Card Number <input class="controls" type="number" name="Card" id="Card" placeholder="Card Number"
+                minlength="16">
+            Expiration Date <input class="controls" type="date" name="Expiration" id="Expiration" placeholder="Date"
+                min="2022-12-13">
+            Security Code <input class="controls" type="password" name="Security" id="Security"
+                placeholder="3 or 4 digits" minlength="3" maxlength="4">
+
+            <div class="tacbox">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox">I agree with <a href="#">Terms and Condition.</a></label>
+            </div>
+
+            <tr>
+                <input class="buttons" type="reset" value="Reset">
+
+                <input class="buttons " type="submit" value="Save">
+            </tr>
+            <footer id="main-footer">
+                <p>&copy; 2023 <a href="#">Lua Store</a></p>
+            </footer>
+
+            </section>
+
+
+        </form>
+
+        
+
+</body>
+
+
+</html>
