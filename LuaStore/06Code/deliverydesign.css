@@ -1,0 +1,142 @@
+body {
+    overflow-x: hidden;
+    font-family:sans-serif;
+}
+
+.menu{
+    background-color: beige;
+    margin: 0rem;
+    padding: 0.5rem;
+    background: #1971b94d;
+    box-shadow: 0 4px 15px 0 rgba(31, 38, 135, 0.158);    
+}
+
+.menu ul{
+    list-style: none;
+    margin: auto;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logolua{
+    width: 3rem;
+    height: 3rem;
+}
+
+.texto{
+    text-align: center;
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.search{
+    border-radius: 1rem;
+}
+
+.searchicon{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+
+
+.form{
+    font-size: 1.1rem;
+    margin: 4rem;
+    padding: 2rem;
+    background: #ffffff66;
+    box-shadow: 0 5px 12px 0 #2d3c474d;
+    border-radius: 1rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+} 
+
+.form-control{
+    border-radius: 1rem;
+    align-items: center;
+    background-color: #7476762d;
+    border-style: none;
+    width: 20rem;
+    margin: 1rem;
+}
+
+.form-select{
+    border-radius: 1rem;
+    background-color: #7476762d;
+    border-style: none;
+        width: 20rem;
+
+}
+
+.col-sm-2{
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.form-check-input{
+    background-color: #7476762d;
+    border-style: none;
+    
+}
+
+.form-check-label{
+    margin: 0.3rem;
+}
+
+.submit{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border: px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+}
+
+.reset{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border: px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

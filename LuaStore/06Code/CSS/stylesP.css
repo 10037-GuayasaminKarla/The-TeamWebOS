@@ -5,18 +5,21 @@
 }
 
 body {
-    background-image: url('../images/logogirl.png');
+    background-image: url('../images/FONDO.jpg');
+    font-family: Helvetica, Arial, sans-serif;
+    
 }
 
+
 .form-CardPayment {
-    width: 400px;
-    background: #24303c;
+    width: 700px;
+    background: #f7bebb;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: white;
+    color: rgb(3, 3, 3);
     box-shadow: 7px 13px 37px #000;
 }
 
@@ -31,7 +34,7 @@ body {
 
 .controls {
     width: 100%;
-    background: #24303c;
+    background: #ffffff;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
@@ -60,13 +63,15 @@ body {
 }
 
 .form-CardPayment .buttons {
+    
     width: 100%;
-    background: #1f53c5;
+    background: #ffffff;
     border: none;
     padding: 12px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 16px 0;
     font-size: 16px;
+    
 }
 .img_container {
     text-align: center;
@@ -76,8 +81,8 @@ body {
   display:block;
   padding: 1em;
   margin: 2em;
-  border: 3px solid #ddd;
-  background-color: rgb(156, 166, 255);
+  border:  1px solid #1f53c5;
+  background-color: rgb(248, 180, 170);
   max-width: 800px;
 }
 
@@ -86,3 +91,22 @@ input {
   width: 2em;
   vertical-align: middle;
 }
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+    .div-img {
+        display: grid;
+  place-content: center;
+      }
