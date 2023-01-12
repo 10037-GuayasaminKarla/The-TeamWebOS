@@ -72,16 +72,70 @@ LUA GIRL #f298b15d
 
 /*NAVBAR*/
 
-.payment{
-    width: 100%;
-}
+.form{
+    font-size: 1.1rem;
+    margin: 4rem;
+    padding: 2rem;
+    background: #ffffff66;
+    box-shadow: 0 5px 12px 0 #2d3c474d;
+    border-radius: 1rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+} 
 
-.logos{
+.form-control{
+    border-radius: 1rem;
+    align-items: center;
+    background-color: #7476762d;
+    border-style: none;
+    width: 20rem;
     margin: 1rem;
-    margin-left: 3rem;
 }
 
-.text{
-    margin: 1.4rem;
-    text-align: left;
+.form-select{
+    border-radius: 1rem;
+    background-color: #7476762d;
+    border-style: none;
+        width: 20rem;
+
 }
+
+.col-sm-2{
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.form-check-input{
+    background-color: #7476762d;
+    border-style: none;
+    
+}
+
+.form-check-label{
+    margin: 0.3rem;
+}
+
+.submit{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border: px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+}
+
+.reset{
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border: px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+}
+
+.title{
+    margin: 2rem;
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 5px 5px #1971b94d;
+}
+
