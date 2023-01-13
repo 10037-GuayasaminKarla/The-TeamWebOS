@@ -127,6 +127,8 @@ LUA GIRL #f298b15d
     -webkit-backdrop-filter: blur( 5.5px );
     border: px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 1rem;
+    width: 6rem;
+    margin-right: 0.5rem;
 }
 
 .reset{
@@ -135,6 +137,8 @@ LUA GIRL #f298b15d
     -webkit-backdrop-filter: blur( 5.5px );
     border: px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 1rem;
+    width: 6rem;
+    margin-left: 0.5rem;
 }
 
 .title{
@@ -153,3 +157,4 @@ LUA GIRL #f298b15d
   background-color: rgb(207, 211, 243);
   max-width: 800px;
 }
+
