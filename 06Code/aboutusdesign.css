@@ -101,3 +101,24 @@ LUA GIRL #f298b15d
     margin: 1.4rem;
     text-align: left;
 }
+
+.aboutusbtn{
+    border-radius: 1rem;
+    background-color: #f298b1;
+    width: 7rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 1.4rem;
+}
+
+.visitbutton{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.visitbutton:hover{
+    text-decoration: none;
+    color:#0000006c;
+}
+
+

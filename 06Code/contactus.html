@@ -45,56 +45,44 @@
                 </button>
             </div>
         </nav>
-        <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
-                <li class="nav-item"><a href="/products.html" class="nav-link px-2 text-muted">Products</a></li>
-                <li class="nav-item"><a href="/collection.html" class="nav-link px-2 text-muted">Collections</a></li>
-                <li class="nav-item"><a href="/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
-            </ul>
-            <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
-                Guerra</p>
-        </footer>
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <form method="get" class="form dl">
+                    <h1 class="title">Contact Us</h1>
+                    <div class="row d-flex justify-content-center">
+                        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                        <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="lastname" class="col-sm-2 col-form-label">Last Name:</label>
+                        <input class="form-control" type="text" id="lastname" name="name" pattern="^([A-Za-z]+)$"
+                            required>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="email" required />
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <label for="descrption" class="col-sm-2 col-form-label">Message</label>
+                        <textarea class="form-control" id="description" rows="3">Write the message</textarea>
+                    </div>
+                    <button class="add btn btn-success">Send
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
-    <hr size="5">
-    <form method="get" align="center">
-        <h1> Contac Us </h1>
-        <table border="5" cellpadding="15" width="50%" align="center">
-            <tr>
-                <td> <label for="name"> Name: </label> </td>
-                <td> <input type="text" name="name" name="name" pattern="^([A-Za-z]+)$" required/> <br></td>
-            </tr>
-            <tr>
-                <td><label for="name">Last Name :</label></td>
-                <td><input type="text" name="lastname" name="lastname" pattern="^([A-Za-z]+)$" required/></td>
-        
-            </tr>
-            <tr>
-                <td> <label for="Email"> Email: </label> </td>
-                <td><input type="Email" name="Email" placeholder="Email" required /></td>
-            </tr>
-
-            <tr>
-                <td> Options: </td>
-                <td> <input type="radio" aid="Aid" name="Options" value=" m" checked>
-                    <label for="aid"> Aid </label> <br>
-                    <input type="radio" query="query" name="Options" value=" f">
-                    <label for="query"> Query </label> <br>
-
-                </td>
-            </tr>
-            <tr>
-                <td> <label for="Mensaje"> Menssage: </label> </td>
-                <td> <textarea name="Menssage" rows="5" cols="30"></textarea> <br> </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit">
-                </td>
-            </tr>
-        </table>
-    </form>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="/principalpage.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="/aboutus.html" class="nav-link px-2 text-muted">About Us</a></li>
+            <li class="nav-item"><a href="/products.html" class="nav-link px-2 text-muted">Products</a></li>
+            <li class="nav-item"><a href="/collection.html" class="nav-link px-2 text-muted">Collections</a></li>
+            <li class="nav-item"><a href="/forms.html" class="nav-link px-2 text-muted">Buy</a></li>
+        </ul>
+        <p class="text-center text-muted">2023 , Juliana Escobar - Guayasamin Karla - Cristian Idrobo - Luciana
+            Guerra</p>
+    </footer>
 </body>
 
 </html>
