@@ -9,6 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Card Payment</title>
     <link rel="stylesheet" href="formsdesign.css">
+    <script src="./js/payment.js"></script>
 </head>
 
 <body>
@@ -50,32 +51,43 @@
                 <h1 class="title">Pay For Your Product</h1>
             </div>
             <div class="col-sm-12 d-flex justify-content-center">
-                <form method="get" class="form dl">
+                <form method="get" class="form dl" onsubmit="return validarFormulario()">
                     <h1 class="title">Card Payment</h1>
                     <div class="row d-flex justify-content-center">
                         <label for="name" class="col-sm-2 col-form-label">Name:</label>
-                        <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" required>
+                        <input class="form-control" type="text" id="name" name="name" pattern="^([A-Za-z]+)$" >
+                        <div class="col-sm-4">
+                            <span id="error-name" class="error-message"></span>
+                        </div>
+                        
                     </div>
                     <div class="row d-flex justify-content-center">
                         <label for="lastname" class="col-sm-2 col-form-label">Card Number:</label>
-                        <input class="form-control" type="number" name="Card" id="Card" placeholder="Card Number"
-                            minlength="16">
+                        <input class="form-control" type="number" name="Card" id="Card" placeholder="Card Number" minlength="16">
+                        <div class="col-sm-4">
+                            <span id="error-card" class="error-message"></span>
+                        </div>
+                        
                     </div>
                     <div class="row d-flex justify-content-center">
                         <label for="date" class="col-sm-2 col-form-label">Expiration Date:</label>
-                        <input class="form-control" type="date" name="Expiration" id="Expiration" placeholder="Date"
-                            min="2022-12-13">
+                        <input class="form-control" type="date" name="Expiration" id="Expiration" placeholder="Date" min="2023-02-20">
+                        <div class="col-sm-4">
+                            <span id="error-expiration" class="error-message"></span>
+                        </div>
+                        
                     </div>
-
                     <div class="row d-flex justify-content-center">
                         <label for="zip" class="col-sm-2 col-form-label">Zip:</label>
-                        <input type="text" class="form-control" id="zip" minlength="6" required>
+                        <input type="text" class="form-control" id="zip" minlength="6" >
+                        <div class="col-sm-4">
+                            <span id="error-zip" class="error-message"></span>
+                        </div>
+                      
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <button type="submit" class="submit btn btn-success">Add
-                        </button>
-                        <button type="reset" class="reset btn btn-danger">Reset
-                        </button>
+                        <button type="submit" class="submit btn btn-success">Add</button>
+                        <button type="reset" class="reset btn btn-danger">Reset</button>
                     </div>
                 </form>
             </div>
