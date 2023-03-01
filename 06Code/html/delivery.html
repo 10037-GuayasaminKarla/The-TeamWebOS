@@ -9,6 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Delivery</title>
     <link rel="stylesheet" href="/06Code/CSS/formsdesign.css">
+    <script src="/06Code/js/delivery.js"></script>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                 <h1 class="title">Information For Your Delivery</h1>
             </div>
             <div class="col-sm-12 d-flex justify-content-center">
-            <form method="get" class="form dl">
+            <form method="get" class="form dl" onsubmit="return validarFormulario()">
                 <h1 class="title">Delivery</h1>
                 <div class="row d-flex justify-content-center">
                     <label for="name" class="col-sm-2 col-form-label">Name:</label>
