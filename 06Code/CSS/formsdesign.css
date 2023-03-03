@@ -172,3 +172,16 @@ LUA GIRL #f298b15d
     color: red;
     font-size: 0.8rem;
   }
+Footer
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 12px;
+  }
+  
+  .error-message.show {
+    display: block;
+  }
+
+
