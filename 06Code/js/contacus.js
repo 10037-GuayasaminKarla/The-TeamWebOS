@@ -1,37 +1,53 @@
-function validarFormulario() {
-    // Obtener referencias a los campos del formulario
-    var name = document.getElementById("name");
-    var lastname = document.getElementById("lastname");
-   // var expiration = document.getElementById("Expiration");
-    //var zip = document.getElementById("zip");
-  
-    // Obtener referencias a los elementos de mensaje de error
-    var errorName = document.getElementById("error-name");
-    var errorLastname = document.getElementById("error-lastname");
-    //var errorExpiration = document.getElementById("error-expiration");
-    //var errorZip = document.getElementById("error-zip");
-  
-    // Bandera para indicar si el formulario es válido o no
-    var formularioValido = true;
-  
-    // Validar el campo de nombre
-    if (!name.checkValidity()) {
-      errorName.innerHTML = "Please enter a valid name";
-      formularioValido = false;
-    } else {
-      errorName.innerHTML = "";
-    }
-  
-    // Validar el campo de número de tarjeta
-    if (lastname.value.length < 16) {
-      errorLastname.innerHTML = "Please enter a valid lastname }";
-      formularioValido = false;
-    } else
-    {
-      errorLastname.innerHTML = "";
-      }
-          
-  // Devolver si el formulario es válido o no
-  return formularioValido;
+function validateHTML() {
+  // Obtener referencias a los campos del formulario
+  const name = document.getElementById("name").value;
+  const lastname = document.getElementById("lastname").value;
+  const email = document.getElementById('email').value;
+  const Card = document.querySelector('input[name="Card"]:checked');
+  const message = document.getElementById("mensage").value;
+
+
+
+  // Validar el campo de nombre
+  if (name == '') {
+    document.getElementById('name-error').innerHTML = '<span style="color:red">Please enter your name.</span>';
+    return  false;
+  } else {
+    document.getElementById ('name-error').innerHTML='';
   }
-  
+
+  // Validar el campo de lastname
+  if (lastname == '') {
+    document.getElementById('lastname-error').innerHTML = '<span style="color:red">Please enter your lastname.</span>';
+    return  false;
+  } else {
+    document.getElementById ("name-error").innerHTML='';
+  }
+
+
+  // Validar el campo email
+
+  if (email == '') {
+    document.getElementById('email-error').innerHTML = '<span style="color:red">Please enter your email.</span>';
+    return false;
+  } else {
+    document.getElementById('email-error').innerHTML = '';
+  }
+
+  if (!Card) {
+    document.getElementById('Card-error').innerHTML = '<span style="color:red">Please select one.</span>';
+    return false;
+  } else {
+    document.getElementById('Card-error').innerHTML = '';
+  }
+ 
+  if (message == '') {
+    document.getElementById('messge-error').innerHTML = '<span style="color:red">Please enter your menssge.</span>';
+    return  false;
+  } else {
+    document.getElementById ("message-error").innerHTML='';
+  }
+
+
+  return true;
+  }
